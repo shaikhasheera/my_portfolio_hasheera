@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://7d2bba70-a297-4353-868c-50e6cf96b4d2-%2D1751040000-%2Ddbcd23ee.app.yourware.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Hasheera - Portfolio</title>
+    <script src="./3.4.16"></script>
+    <link href="./all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .bounce-in {
+            animation: bounceIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px;
+            animation: fillBar 1.5s ease-out;
+        }
+        
+        @keyframes fillBar {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-20{bottom:5rem}.left-20{left:5rem}.right-20{right:5rem}.top-0{top:0px}.top-20{top:5rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-3{margin-left:0.75rem}.ml-4{margin-left:1rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-2{margin-top:0.5rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-3{height:0.75rem}.h-72{height:18rem}.h-96{height:24rem}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-72{width:18rem}.w-96{width:24rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/30{border-color:rgb(255 255 255 / 0.3)}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-50{--tw-gradient-from:#f9fafb var(--tw-gradient-from-position);--tw-gradient-to:rgb(249 250 251 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-50{--tw-gradient-from:#f0fdf4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(240 253 244 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-500{--tw-gradient-from:#22c55e var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 197 94 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-50{--tw-gradient-from:#eef2ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(238 242 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-50{--tw-gradient-from:#fff7ed var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 247 237 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-500{--tw-gradient-from:#f97316 var(--tw-gradient-from-position);--tw-gradient-to:rgb(249 115 22 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-100{--tw-gradient-from:#f3e8ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(243 232 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-50{--tw-gradient-from:#faf5ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(250 245 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-50{--tw-gradient-to:#eff6ff var(--tw-gradient-to-position)}.to-indigo-50{--tw-gradient-to:#eef2ff var(--tw-gradient-to-position)}.to-pink-100{--tw-gradient-to:#fce7f3 var(--tw-gradient-to-position)}.to-pink-50{--tw-gradient-to:#fdf2f8 var(--tw-gradient-to-position)}.to-pink-600{--tw-gradient-to:#db2777 var(--tw-gradient-to-position)}.to-purple-50{--tw-gradient-to:#faf5ff var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.to-red-50{--tw-gradient-to:#fef2f2 var(--tw-gradient-to-position)}.to-red-600{--tw-gradient-to:#dc2626 var(--tw-gradient-to-position)}.to-teal-50{--tw-gradient-to:#f0fdfa var(--tw-gradient-to-position)}.to-teal-600{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.placeholder-gray-300::placeholder{--tw-placeholder-opacity:1;color:rgb(209 213 219 / var(--tw-placeholder-opacity, 1))}.opacity-10{opacity:0.1}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-yellow-300:hover{--tw-bg-opacity:1;background-color:rgb(253 224 71 / var(--tw-bg-opacity, 1))}.hover\:text-purple-600:hover{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.hover\:text-purple-800:hover{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.focus\:border-white:focus{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 fade-in shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">Shaik Hasheera</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#home" class="hover:text-purple-600 transition-colors">Home</a>
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#about" class="hover:text-purple-600 transition-colors">About</a>
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#skills" class="hover:text-purple-600 transition-colors">Skills</a>
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#projects" class="hover:text-purple-600 transition-colors">Projects</a>
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#contact" class="hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="floating absolute top-20 left-20 w-72 h-72 bg-white rounded-full"></div>
+            <div class="floating absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full" style="animation-delay: 1s;"></div>
+        </div>
+        
+        <div class="text-center text-white z-10 px-4">
+            <div class="bounce-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Hi, I'm <span class="text-yellow-300">Shaik Hasheera</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-4 text-gray-200">
+                    Passionate Full Stack Developer &amp; AI Specialist
+                </p>
+                <p class="text-md md:text-lg mb-8 text-gray-300">
+                    <i class="fas fa-brain mr-2"></i>AI Intern at Placemantra | 
+                    <i class="fas fa-code ml-3 mr-2"></i>10+ Real-time Projects Completed
+                </p>
+                <div class="space-x-4">
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#contact" class="inline-block bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 hover:text-purple-800 transition-all pulse-glow">
+                        Get In Touch
+                    </a>
+                    <a href="https://7d2bba70-a297-4353-868c-50e6cf96b4d2--1751040000--dbcd23ee.app.yourware.app/#projects" class="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-all">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-6">Career Objective</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Passionate about building scalable web solutions and exploring innovative technologies to solve real-world problems. 
+                        Seeking a dynamic role where I can contribute my technical expertise, creativity, and collaborative mindset to impactful 
+                        projects while continuing to grow as a technology professional.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-purple-600"></i>
+                            <span>shaikhasheera2004@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-purple-600"></i>
+                            <span>8074709263</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-purple-600"></i>
+                            <span>Nellore</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-6">Education</h3>
+                    <div class="space-y-6">
+                        <div class="card-hover bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg">B.Tech in Computer Science Engineering</h4>
+                            <p class="text-purple-600">Geethanjali Institute of Science and Technology</p>
+                            <p class="text-gray-500">2022-2026 | CGPA: 8.97</p>
+                        </div>
+                        
+                        <div class="card-hover bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg">Intermediate</h4>
+                            <p class="text-purple-600">Narayana Junior College</p>
+                            <p class="text-gray-500">2020-2022 | Grade: 94.9%</p>
+                        </div>
+                        
+                        <div class="card-hover bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg">SSC</h4>
+                            <p class="text-purple-600">Kendriya Vidayalaya Sangathan</p>
+                            <p class="text-gray-500">2017-2020 | Grade: 93.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">Technical Skills</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-8">Technical Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">C Programming</span>
+                                <span class="text-purple-600">90%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML &amp; CSS</span>
+                                <span class="text-purple-600">95%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-purple-600">85%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">ReactJS</span>
+                                <span class="text-purple-600">80%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Java</span>
+                                <span class="text-purple-600">85%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Machine Learning &amp; AI</span>
+                                <span class="text-purple-600">75%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Python</span>
+                                <span class="text-purple-600">80%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-8">Soft Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                            <i class="fas fa-users text-3xl text-purple-600 mb-4"></i>
+                            <h4 class="font-semibold">Team Collaboration</h4>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                            <i class="fas fa-brain text-3xl text-purple-600 mb-4"></i>
+                            <h4 class="font-semibold">Problem Solving</h4>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                            <i class="fas fa-rocket text-3xl text-purple-600 mb-4"></i>
+                            <h4 class="font-semibold">Fast Learner</h4>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                            <i class="fas fa-crown text-3xl text-purple-600 mb-4"></i>
+                            <h4 class="font-semibold">Leadership</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships & Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">Internships &amp; Projects</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Full Stack Developer Intern -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl shadow-lg slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-code text-white text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Full Stack Developer Intern</h3>
+                            <p class="text-purple-600">Slash Mark</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Developed responsive websites and applications.</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Product Landing Page
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Portfolio Website
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Weather Forecast App
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java Developer Intern -->
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-xl shadow-lg slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-java text-white text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Java Developer Intern</h3>
+                            <p class="text-orange-600">Slash Mark</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Hands-on development in Java-based applications.</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Task List Manager
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Secure Password Generator
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Classic Snake Game (GUI)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt ChatGPT Engineering Intern -->
+                <div class="card-hover bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-xl shadow-lg slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Prompt ChatGPT Engineering Intern</h3>
+                            <p class="text-green-600">Excelr (AICTE Preferred)</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Learning and building prompt workflows using ChatGPT and LLMs.</p>
+                </div>
+
+                <!-- Artificial Intelligence Intern -->
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Artificial Intelligence Intern</h3>
+                            <p class="text-purple-600">Placemantra</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Gained comprehensive hands-on experience with cutting-edge AI techniques and demonstrated exceptional performance throughout the internship program.</p>
+                    
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Data Preprocessing &amp; Feature Engineering
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Machine Learning Algorithms Implementation
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Model Training &amp; Optimization
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Problem-solving with AI Techniques
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-4 rounded-lg">
+                        <p class="text-sm font-medium text-purple-800">
+                            <i class="fas fa-star text-yellow-500 mr-2"></i>
+                            Recognized for consistent performance, sincerity, and diligence throughout the internship
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">Certifications &amp; Achievements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-8 flex items-center">
+                        <i class="fas fa-certificate text-purple-600 mr-3"></i>
+                        Certifications
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">Java Programming Certification</h4>
+                            <p class="text-purple-600">Spoken Tutorial</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">Python Programming Certification</h4>
+                            <p class="text-purple-600">Spoken Tutorial</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">Introduction to Artificial Intelligence</h4>
+                            <p class="text-purple-600">Simplilearn</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">
+                    <h3 class="text-2xl font-semibold mb-8 flex items-center">
+                        <i class="fas fa-trophy text-yellow-500 mr-3"></i>
+                        Achievements
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">10+ Real-time Projects</h4>
+                            <p class="text-gray-600">Completed across Full Stack and Java development</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">Coding Contests &amp; Tech Fests</h4>
+                            <p class="text-gray-600">Participated and ranked in multiple competitions</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="font-semibold text-lg mb-2">CBSE Merit Award</h4>
+                            <p class="text-gray-600">Mathematics excellence in 10th standard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8 slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">Let's Connect!</h2>
+            <p class="text-xl text-gray-200 mb-12 slide-up" style="opacity: 1; transform: translateY(0px); transition: 0.8s ease-out;">Ready to collaborate on exciting projects? Let's get in touch!</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <a href="mailto:shaikhasheera2004@gmail.com" class="card-hover bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white hover:bg-white/20 transition-all">
+                    <i class="fas fa-envelope text-3xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="text-sm text-gray-200">shaikhasheera2004@gmail.com</p>
+                </a>
+                
+                <a href="tel:8074709263" class="card-hover bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white hover:bg-white/20 transition-all">
+                    <i class="fas fa-phone text-3xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Phone</h3>
+                    <p class="text-sm text-gray-200">8074709263</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/shaikhasheera" target="_blank" class="card-hover bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white hover:bg-white/20 transition-all">
+                    <i class="fab fa-linkedin text-3xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-sm text-gray-200">Connect with me</p>
+                </a>
+                
+                <a href="https://github.com/shaikhasheera" target="_blank" class="card-hover bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white hover:bg-white/20 transition-all">
+                    <i class="fab fa-github text-3xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">GitHub</h3>
+                    <p class="text-sm text-gray-200">View my code</p>
+                </a>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-white mb-6">Quick Message</h3>
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-gray-300 border border-white/30 focus:border-white focus:outline-none">
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-gray-300 border border-white/30 focus:border-white focus:outline-none">
+                    </div>
+                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-gray-300 border border-white/30 focus:border-white focus:outline-none"></textarea>
+                    <button type="submit" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 hover:text-purple-800 transition-all pulse-glow">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white text-center">
+        <p>© 2024 Shaik Hasheera. All rights reserved.</p>
+        <p class="text-gray-400 mt-2">Built with passion and modern web technologies</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with slide-up class
+        document.querySelectorAll('.slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease-out';
+            observer.observe(el);
+        });
+    </script>
+
+</body></html>
